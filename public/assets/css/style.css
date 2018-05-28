@@ -10,4 +10,17 @@
 .main-section {
     max-width: 650px;
     border: 1px solid #cd5c5c;
+    float: left;
+}
+
+#main-container {
+    padding-top: 130px;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
