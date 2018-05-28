@@ -30,12 +30,16 @@
             <div class="col-sm-5">
                 <form>
                     <div class="form-group row">
-                            <label for="Name">Name</label>
-                            <input type="email" class="form-control" id="name" placeholder="Name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required="required">
                     </div>
                     <div class="form-group row">
-                        <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
                     </div>
                 </form>
             </div>
