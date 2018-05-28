@@ -6,3 +6,12 @@ var PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.unsubscribe(bodyParser.json());
+
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
+
+  
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+});
