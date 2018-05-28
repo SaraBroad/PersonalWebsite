@@ -1,7 +1,4 @@
-#header-name {
-    font-size: 30px;
-    font-weight: bold;
-}
+
 
 #contact-container {
     padding-left: 30px;
@@ -10,11 +7,14 @@
 .container {
     width: 100%;
     max-width: 960px;
+    margin: 0 auto;
+    clear: both;
 }
+
 
 .main-section {
     max-width: 650px;
-    border: 1px solid #20B2AA;
+    border: 1px solid #ddd;
     float: left;
 }
 
@@ -39,6 +39,7 @@
     color: #fff;
     background: #fff;
     border-bottom: 2px solid #ccc;
+    height: 90px;
   }
   
 
@@ -49,16 +50,14 @@
     padding: 20px 30px 20px 30px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-align: center;
-    margin-left: 125px;
     clear: both;
     margin-top: 9px;
-    font-size: 20px;
+    font-size: 30px;
 }
-
-
 
   nav {
       float: right;
+      margin-top: 25px;
   }
 
   nav a {
@@ -75,3 +74,12 @@
     border-left: 0 none;
   }
   
+  .sidebar {
+      float: right;
+      width: 100%;
+      max-width: 270px;
+      padding: 30px;
+      margin-bottom: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+  }
