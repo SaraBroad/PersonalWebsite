@@ -150,8 +150,9 @@ img {
 .link {
   border: 1px solid black;
   font-size: 16px;
-  padding: 5px;
-  margin-left: 75px
+  padding: 10px;
+  margin-left: 75px;
+  margin-top: 10px;
 }
 
 .pic-row {
