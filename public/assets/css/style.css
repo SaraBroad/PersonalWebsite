@@ -140,4 +140,10 @@ footer {
 img {
   width: 220px;
   height: 150px;
+  padding-left: 20px;
+}
+
+.title {
+  text-align: center;
+ 
 }
