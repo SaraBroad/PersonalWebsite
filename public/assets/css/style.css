@@ -145,5 +145,15 @@ img {
 
 .title {
   text-align: center;
- 
+}
+
+.link {
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 75px
+}
+
+.pic-row {
+  padding-bottom: 25px;
 }
