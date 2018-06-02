@@ -156,3 +156,22 @@ footer {
 #sidebar-contact {
     margin-right: 160px;
 }  
+
+.fa-linkedin {
+  font-size: 40px;
+  padding: 15px;
+  background-color: rgb(0,119,181);
+  color: white;
+}
+
+.fa-github {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.fa-stack-overflow {
+  background-color: #FF9900;
+  color: white;
+  padding: 15px;
+}
