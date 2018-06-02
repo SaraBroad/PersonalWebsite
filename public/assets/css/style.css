@@ -114,13 +114,13 @@ footer {
       margin-top: 115px;
   }
 
-  .work img {
+  /* .work img {
     width: 100%;
     border: 0 none;
     opacity: 0.8;
-  }
+  } */
 
-  .work {
+  /* .work {
     position: relative;
     float: left;
     width: 274px;
@@ -130,8 +130,8 @@ footer {
 
   .work:nth-child(even) {
     margin-right: 40px;
-  }
-  
+  } */
+/*   
   .work img {
     width: 100%;
     border: 0 none;
@@ -150,7 +150,7 @@ footer {
     text-align: center;
     background: #4aaaa5;
     border-bottom: 0;
-  }
+  } */
   
   
 #sidebar-contact {
@@ -174,4 +174,13 @@ footer {
   background-color: #FF9900;
   color: white;
   padding: 15px;
+}
+
+/* .port-image {
+  margin: 20px auto;
+} */
+
+img {
+  width: 200px;
+  height: 150px;
 }
