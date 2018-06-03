@@ -13,4 +13,9 @@ module.exports = function (app) {
     app.get("/contact", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/contact.html"))
     });
+
+    app.post("/send", function(req, res){
+        console.log(req.body);
+    })
 }
+
