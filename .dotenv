@@ -1,4 +1,3 @@
 require('dotenv').config();
 
-email = sarabroadcontact@gmail.com;
-password = popcorn4398@;
+
