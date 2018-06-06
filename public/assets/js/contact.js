@@ -2,24 +2,26 @@
 //call api
 //do on click event to get data
 //send back to server-side api
-$(document).ready(function(){
+$(document).ready(function () {
 
-$("#submit").on("click", function (){
-var name = $("#name").val().trim();
-console.log(name);
-var email = $("#email").val().trim();
-console.log(email);
-var phone = $("#phone").val().trim();
-console.log(phone);
-var message = $("#message").val().trim();
-console.log(message);
+    $("#submit").on("click", function () {
 
-// name
-// email
-// phone
-// message
+        var newUser = {
+            name: $("#name").val().trim(),
+            email: $("#email").val().trim(),
+            phone: $("#phone").val().trim(),
+            message: $("#message").val().trim()
+        }
+        console.log(newUser);
+        $.post("/send", newUser, function (data) {
+            if (data) {
+                alert("Your message has been sent!")
+            }
+            else {
+                throw err
+            }
 
-
-});
+        });
+    });
 
 });
