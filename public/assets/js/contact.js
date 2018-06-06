@@ -20,10 +20,11 @@ $(document).ready(function () {
             else {
                 throw err
             }
-        
+
             $("#name").val("");
             $("#email").val("");
-        
+            $("#phone").val("");
+            $("#message").val("");
         });
     });
 
