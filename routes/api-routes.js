@@ -2,16 +2,16 @@ var nodemailer = require("nodemailer");
 
 module.exports = function(app) {
 app.post("/send", function (req, res, next) {
-    var name = req.body.name,
-    var email = req.body.email,
-    var phone = req.body.phone,
-    var message = req.body.message
+    var name = req.body.name;
+    var email = req.body.email;
+    var phone = req.body.phone;
+    var message = req.body.message;
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: email,
-            pass: password
+            user: process.env.email,
+            pass: process.env.password
         }
     });
 

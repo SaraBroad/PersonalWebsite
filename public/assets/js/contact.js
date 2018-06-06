@@ -4,8 +4,8 @@
 //send back to server-side api
 $(document).ready(function () {
 
-    $("#submit").on("click", function () {
-
+    $("#submit").on("click", function (event) {
+        event.preventDefault()
         var newUser = {
             name: $("#name").val().trim(),
             email: $("#email").val().trim(),
