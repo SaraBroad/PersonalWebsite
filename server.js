@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 require("./routes/html-routes.js")(app);
-// require("./routes/api-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 
 app.listen(PORT, function () {
