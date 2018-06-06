@@ -14,10 +14,10 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/contact.html"))
     });
 
-    app.post("/send", function(req, res){
-        console.log(req.body);
-        //what to put
-    });
+    // app.post("/send", function(req, res){
+    //     console.log(req.body);
+    //     //what to put
+    // });
 
 }
 

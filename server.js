@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 // var exphbs = require("express-handlebars");
 var path = require("path");
-var nodemailer = require("nodemailer");
+
 
 var app = express();
 var PORT = 8080;
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 require("./routes/html-routes.js")(app);
-
+// require("./routes/api-routes.js")(app);
 
 
 app.listen(PORT, function () {
