@@ -22,6 +22,7 @@ $(document).ready(function () {
             }
         
             $("#name").val("");
+            $("#email").val("");
         
         });
     });
