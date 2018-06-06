@@ -20,7 +20,9 @@ $(document).ready(function () {
             else {
                 throw err
             }
-
+        
+            $("#name").val("");
+        
         });
     });
 
