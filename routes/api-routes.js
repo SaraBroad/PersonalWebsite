@@ -2,7 +2,6 @@ var nodemailer = require("nodemailer");
 
 module.exports = function(app) {
 app.post("/send", function (req, res, next) {
-    console.log(req.body);
     var name = req.body.name;
     var email = req.body.email;
     var phone = req.body.phone;
@@ -16,14 +15,22 @@ app.post("/send", function (req, res, next) {
         }
     });
 
-    let mailOptions = {
-        to: "sarabroadcontact@gmail.com",
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
+    // let mailOptions = {
+    //     to: "sarabroadcontact@gmail.com",
+    //     name: name,
+    //     email: email,
+    //     phone: phone,
+    //     message: message
+    // };
+
+        let mailOptions = {
+        from: email,
+        to: 'sarabroadcontact@gmail.com', // list of receivers
+        subject: 'Message from website user', // Subject line
+        text: "Sender name: " + " " + name + " " + "email: " + " " + email + " " + "Phone number: " + " " + phone + " " + "Message: " + message
     };
 
+      console.log(mailOptions)
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             return console.log(error);
