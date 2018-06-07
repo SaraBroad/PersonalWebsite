@@ -15,14 +15,6 @@ app.post("/send", function (req, res, next) {
         }
     });
 
-    // let mailOptions = {
-    //     to: "sarabroadcontact@gmail.com",
-    //     name: name,
-    //     email: email,
-    //     phone: phone,
-    //     message: message
-    // };
-
         let mailOptions = {
         from: email,
         to: 'sarabroadcontact@gmail.com', // list of receivers
