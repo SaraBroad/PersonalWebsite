@@ -2,6 +2,7 @@ var nodemailer = require("nodemailer");
 
 module.exports = function(app) {
 app.post("/send", function (req, res, next) {
+    console.log(req.body);
     var name = req.body.name;
     var email = req.body.email;
     var phone = req.body.phone;
