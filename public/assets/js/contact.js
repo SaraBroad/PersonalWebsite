@@ -14,10 +14,12 @@ $(document).ready(function () {
         }
         console.log(newUser);
         $.post("/send", newUser, function (data) {
+            console.log(data);
             if (data) {
                 alert("Your message has been sent!")
             }
             else {
+                console.log("Error message")
                 throw err
             }
 
