@@ -31,3 +31,11 @@ $(document).ready(function () {
     });
 
 });
+
+console.log();
+function test() {
+
+}
+feed = () => {
+
+}
